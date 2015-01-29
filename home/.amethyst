@@ -1,18 +1,10 @@
 {
     "LAYOUTS": "----------------------",
     "layouts": [
-        "tall",
         "wide",
         "fullscreen",
-        "column",
+        "tall",
         "floating"
     ],
 
-    "MISC": "----------------------",
-    "floating": [],
-    "float-small-windows": true,
-    "mouse-follows-focus": false,
-    "focus-follows-mouse": true,
-    "enables-layout-hud": true,
-    "enables-layout-hud-on-space-change": false
 }
