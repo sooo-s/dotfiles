@@ -45,6 +45,11 @@ NeoBundleCheck
 syntax on
 set list
 set listchars=tab:>-,eol:$
+
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
 set undodir=~/tmp/vim/undo
 set undofile
 
