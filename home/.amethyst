@@ -1,10 +1,10 @@
 {
     "LAYOUTS": "----------------------",
     "layouts": [
-        "tall",
         "floating",
         "wide",
         "fullscreen",
+        "tall",
     ],
 
 }
