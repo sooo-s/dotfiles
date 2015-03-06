@@ -1,5 +1,10 @@
 alias ls='ls -G'
 
+HISTSIZE=5000
+HISTFILESIZE=5000
+HISTCONTROL=ignoreboth
+HISTIGNORE=ls:pwd:exit
+
 export MANPAGER='less -R'
 man() {
     env \
