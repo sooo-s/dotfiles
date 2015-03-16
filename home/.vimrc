@@ -27,9 +27,9 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
 " my settings
-  NeoBundle 'sickill/vim-monokai'
-  NeoBundle 'kannokanno/previm'
-  NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'sickill/vim-monokai'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
 
 " Required:
 call neobundle#end()
