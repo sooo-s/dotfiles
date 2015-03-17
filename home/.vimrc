@@ -30,6 +30,7 @@ NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 NeoBundle 'sickill/vim-monokai'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'scrooloose/nerdtree'
 
 " Required:
 call neobundle#end()
