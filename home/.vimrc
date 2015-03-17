@@ -59,3 +59,6 @@ augroup PrevimSettings
     autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 augroup END
 
+" remap
+inoremap <silent> jj <ESC>
+
