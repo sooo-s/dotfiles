@@ -27,3 +27,5 @@ source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
+
+homeshick --quiet refresh
