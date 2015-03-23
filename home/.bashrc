@@ -1,4 +1,5 @@
 alias ls='ls -G'
+alias tmux='tmux -u'
 
 HISTSIZE=5000
 HISTFILESIZE=5000
