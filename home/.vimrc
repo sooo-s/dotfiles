@@ -45,6 +45,8 @@ NeoBundleCheck
 
 " etc
 syntax on
+colorscheme monokai
+
 set list
 set listchars=tab:>-,eol:$
 
