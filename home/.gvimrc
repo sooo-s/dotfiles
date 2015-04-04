@@ -1,3 +1,4 @@
+colorscheme base16-google
 set background=dark
 
 " nerdtree settings

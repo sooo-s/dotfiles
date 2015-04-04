@@ -32,6 +32,7 @@ NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'chriskempson/base16-vim'
 
 " Required:
 call neobundle#end()
@@ -45,7 +46,8 @@ NeoBundleCheck
 
 " vim settings
 syntax on
-colorscheme monokai
+colorscheme base16-google
+set background=dark
 
 set list
 set listchars=tab:>-,eol:$
