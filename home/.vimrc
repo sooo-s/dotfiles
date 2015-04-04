@@ -43,7 +43,7 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
-" etc
+" vim settings
 syntax on
 colorscheme monokai
 
@@ -57,13 +57,15 @@ set shiftwidth=2
 set undodir=~/tmp/vim/undo
 set undofile
 
+" remap
+inoremap <silent> jj <ESC>
+
+" previm settings
 augroup PrevimSettings
     autocmd!
     autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 augroup END
 
-" remap
-inoremap <silent> jj <ESC>
 
 " lightline settings
 let g:lightline = {
