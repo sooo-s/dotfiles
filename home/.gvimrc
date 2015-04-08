@@ -1,5 +1,5 @@
-colorscheme base16-google
 set background=dark
+colorscheme base16-monokai
 
 " nerdtree settings
 " デフォルトでツリーを表示させる

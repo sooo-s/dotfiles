@@ -46,8 +46,8 @@ NeoBundleCheck
 
 " vim settings
 syntax on
-colorscheme base16-google
 set background=dark
+colorscheme base16-monokai
 
 set list
 set listchars=tab:>-,eol:$
