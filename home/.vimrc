@@ -37,6 +37,7 @@ NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'slim-template/vim-slim'
 
 " Required:
 call neobundle#end()
