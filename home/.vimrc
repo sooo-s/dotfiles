@@ -38,6 +38,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'slim-template/vim-slim'
+NeoBundle 'tpope/vim-surround'
 
 " Required:
 call neobundle#end()
