@@ -6,6 +6,7 @@ HISTFILESIZE=5000
 HISTCONTROL=ignoreboth
 HISTIGNORE=ls:pwd:exit
 
+export EDITOR=vim
 export MANPAGER='less -R'
 man() {
     env \
@@ -30,3 +31,5 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 homeshick --quiet refresh
+
+eval "$(direnv hook bash)"
