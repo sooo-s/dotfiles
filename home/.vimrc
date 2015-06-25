@@ -40,6 +40,9 @@ NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'tpope/vim-surround'
 
+NeoBundle 'evidens/vim-twig'
+NeoBundle 'cespare/vim-toml'
+
 " Required:
 call neobundle#end()
 
