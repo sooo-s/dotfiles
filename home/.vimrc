@@ -39,6 +39,9 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'tyru/caw.vim'
+nmap <C-_> <Plug>(caw:i:toggle)
+vmap <C-_> <Plug>(caw:i:toggle)
 
 NeoBundle 'evidens/vim-twig'
 NeoBundle 'cespare/vim-toml'
