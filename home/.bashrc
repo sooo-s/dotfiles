@@ -23,6 +23,9 @@ man() {
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
 
