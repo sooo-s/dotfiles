@@ -148,7 +148,8 @@ endfunction
 
 " neocomplete settings
 let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#lock_iminsert = 1
+let g:neocomplete#auto_completion_start_length = 4
+
 
 " neosnippet settings
 " Plugin key-mappings.
