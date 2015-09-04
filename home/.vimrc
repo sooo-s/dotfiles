@@ -23,6 +23,7 @@ endif
 
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'honza/vim-snippets'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
@@ -42,6 +43,8 @@ vmap <C-_> <Plug>(caw:i:toggle)
 
 NeoBundle 'evidens/vim-twig'
 NeoBundle 'cespare/vim-toml'
+NeoBundle 'kchmck/vim-coffee-script'
+
 
 " Required:
 call neobundle#end()
@@ -165,3 +168,9 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
+
+"Enable snipMate compatibility feature.
+let g:neosnippet#enable_snipmate_compatibility = 1
+
+" Tell Neosnippet about the other snippets
+let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
