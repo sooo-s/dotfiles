@@ -1,5 +1,6 @@
 alias ls='ls -G'
 alias tmux='tmux -u'
+alias npm-exec='PATH=$(npm bin):$PATH'
 
 HISTSIZE=5000
 HISTFILESIZE=5000
