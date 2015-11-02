@@ -1,0 +1,15 @@
+[include]
+	path = .gitconfig.local
+[push]
+	default = simple
+[core]
+	editor = vim
+	autocrlf = input
+	safecrlf = true
+[color]
+	ui = auto
+	diff = auto
+[alias]
+	pr-setup = config --add remote.origin.fetch +refs/pull/*/head:refs/remotes/origin/pr/*
+	graph = log --graph --oneline --decorate=full
+
