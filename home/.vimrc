@@ -41,6 +41,8 @@ NeoBundle 'tyru/caw.vim'
 nmap <C-_> <Plug>(caw:i:toggle)
 vmap <C-_> <Plug>(caw:i:toggle)
 
+NeoBundle 'tpope/vim-obsession'
+
 NeoBundle 'evidens/vim-twig'
 NeoBundle 'cespare/vim-toml'
 NeoBundle 'kchmck/vim-coffee-script'
