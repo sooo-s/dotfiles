@@ -13,4 +13,6 @@
 [alias]
 	pr-setup = config --add remote.origin.fetch +refs/pull/*/head:refs/remotes/origin/pr/*
 	graph = log --graph --oneline --decorate=full
+[ghq]
+	root = ~/src
 
