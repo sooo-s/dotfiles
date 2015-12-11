@@ -51,6 +51,4 @@ if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
   source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
 fi
 
-homeshick --quiet refresh
-
 eval "$(direnv hook bash)"
