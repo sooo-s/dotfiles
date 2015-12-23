@@ -30,6 +30,11 @@ function share_history {
 PROMPT_COMMAND='share_history'
 shopt -u histappend
 
+# cd + peco + ghq
+function p-ghq {
+  cd $(ghq list -p | perl -nlpe 's[.*src/(.*)][$1\0$_]' | peco --null)
+}
+
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
