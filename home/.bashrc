@@ -32,7 +32,10 @@ shopt -u histappend
 
 # cd + peco + ghq
 function p-ghq {
-  cd $(ghq list -p | perl -nlpe 's[.*src/(.*)][$1\0$_]' | peco --null)
+  local dir="$(ghq list -p | perl -nlpe 's[.*src/(.*)][$1\0$_]' | peco --null)"
+  if [ ! -z "$dir" ] ; then
+    cd "$dir"
+  fi
 }
 
 export PATH="$HOME/.anyenv/bin:$PATH"
