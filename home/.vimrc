@@ -43,10 +43,11 @@ vmap <C-_> <Plug>(caw:i:toggle)
 
 NeoBundle 'tpope/vim-obsession'
 
+" syntax
 NeoBundle 'evidens/vim-twig'
 NeoBundle 'cespare/vim-toml'
 NeoBundle 'kchmck/vim-coffee-script'
-
+NeoBundle 'elzr/vim-json'
 
 " Required:
 call neobundle#end()
