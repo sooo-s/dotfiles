@@ -49,6 +49,9 @@ NeoBundle 'cespare/vim-toml'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'elzr/vim-json'
 
+" help
+NeoBundle 'vim-jp/vimdoc-ja'
+
 " Required:
 call neobundle#end()
 
