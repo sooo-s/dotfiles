@@ -24,30 +24,31 @@ endif
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'honza/vim-snippets'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'flazz/vim-colorschemes'
 
 " my settings
-NeoBundle 'sickill/vim-monokai'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'chriskempson/base16-vim'
-NeoBundle 'slim-template/vim-slim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tyru/caw.vim'
 nmap <C-_> <Plug>(caw:i:toggle)
 vmap <C-_> <Plug>(caw:i:toggle)
-
 NeoBundle 'tpope/vim-obsession'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'ctrlpvim/ctrlp.vim'
+
+" color
+NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'sickill/vim-monokai'
+NeoBundle 'flazz/vim-colorschemes'
 
 " syntax
 NeoBundle 'evidens/vim-twig'
 NeoBundle 'cespare/vim-toml'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'elzr/vim-json'
+NeoBundle 'slim-template/vim-slim'
 
 " help
 NeoBundle 'vim-jp/vimdoc-ja'
