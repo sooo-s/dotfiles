@@ -37,6 +37,13 @@ vmap <C-_> <Plug>(caw:i:toggle)
 NeoBundle 'tpope/vim-obsession'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'thinca/vim-quickrun'
+let g:quickrun_config={
+\   '_': {
+\     'split': ':botright',
+\     'into': 1
+\   }
+\}
 
 " color
 NeoBundle 'chriskempson/base16-vim'
