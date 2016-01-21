@@ -1,0 +1,27 @@
+type(scope): subject
+
+body
+
+footer
+# conventional-changelog
+# type:
+#   feat (new feature for the user, not a new feature for build script)
+#   fix (bug fix for the user, not a fix to a build script)
+#   docs (changes to the documentation)
+#   style (formatting, missing semi colons, etc; no production code change)
+#   refactor (refactoring production code, eg. renaming a variable)
+#   test (adding missing tests, refactoring tests; no production code change)
+#   chore (updating grunt tasks etc; no production code change)
+#
+# fix, add, changeといった事実ではなく、このcommitで実現する要件や仕様を書きましょう。（リファクタなどは除く）
+# 
+# 例文）
+# - Fix typo in docs
+# - Remove unused code
+# - Remove use of deprecated method
+# - Update Modernizr to v1.6
+# - Make it possible to have IDs per request
+# - Make sure to reset default_url_options（必ずリセットする）
+# - Don't use "assert_not_nil"
+# - Allow the user to drag faster
+# - Remove methods to avoid warnings.
