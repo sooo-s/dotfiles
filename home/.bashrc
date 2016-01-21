@@ -5,7 +5,7 @@ alias npm-exec='PATH=$(npm bin):$PATH'
 HISTSIZE=5000
 HISTFILESIZE=5000
 HISTCONTROL=ignoreboth
-HISTIGNORE=ls:pwd:exit
+HISTIGNORE=ls:pwd:exit:p-ghq
 
 export EDITOR=vim
 export MANPAGER='less -R'
