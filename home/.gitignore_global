@@ -39,11 +39,14 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# direnv
+### direnv
+
 .envrc
 
-# mydoc
+### mydoc
+
 mydoc/
+
 ### https://raw.github.com/github/gitignore/be3333655bffe9507d66cc864aee95ed6052b4ed/Global/Windows.gitignore
 
 # Windows image file caches
@@ -64,5 +67,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-
