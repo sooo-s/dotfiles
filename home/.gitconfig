@@ -17,4 +17,4 @@
 	root = ~/src
 
 [commit]
-	template = /Users/s_sugawara/.gitmessage.txt
+	template = ~/.gitmessage.txt
