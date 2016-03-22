@@ -86,6 +86,8 @@ set shiftwidth=2
 set undodir=~/tmp/vim/undo
 set undofile
 
+set clipboard=unnamed,autoselect
+
 " remap
 inoremap <silent> jj <ESC>
 
