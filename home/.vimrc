@@ -78,6 +78,7 @@ colorscheme hybrid
 set list
 set listchars=tab:>-,eol:$
 
+set backspace=indent,eol,start
 set expandtab
 set tabstop=2
 set shiftwidth=2
