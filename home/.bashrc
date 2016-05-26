@@ -6,6 +6,7 @@ HISTSIZE=5000
 HISTFILESIZE=5000
 HISTCONTROL=ignoreboth
 HISTIGNORE='ls:ls *:pwd:exit:p-ghq*:history:history *'
+HISTTIMEFORMAT="%FT%T%z "
 
 export EDITOR=vim
 export MANPAGER='less -R'
