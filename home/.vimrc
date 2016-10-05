@@ -91,6 +91,9 @@ set clipboard=unnamed,autoselect
 " remap
 inoremap <silent> jj <ESC>
 
+set spelllang+=cjk
+set spell
+
 " nerdtree settings
 " 隠しファイルをデフォルトで表示させる
 let NERDTreeShowHidden = 1
