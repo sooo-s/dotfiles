@@ -50,8 +50,6 @@ bind -x '"\C-r": p-history'
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
-eval "$(pyenv virtualenv-init -)"
-
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
