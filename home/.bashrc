@@ -57,17 +57,20 @@ export PATH="$PATH:$GOPATH/bin"
 export HOMESHICK_DIR=/usr/local/opt/homeshick
 source "/usr/local/opt/homeshick/homeshick.sh"
 
+# brew install bash-completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+# brew install bash-git-prompt
 if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
   GIT_PROMPT_THEME=Default
   GIT_PROMPT_ONLY_IN_REPO=1
   source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
 fi
 
-# itermocil
+# brew install itermocil
 complete -W "$(itermocil --list)" itermocil
 
+# brew install direnv
 eval "$(direnv hook bash)"
