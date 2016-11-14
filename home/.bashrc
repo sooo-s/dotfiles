@@ -53,8 +53,9 @@ eval "$(anyenv init -)"
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
-source "$HOME/.homesick/repos/homeshick/homeshick.sh"
-source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
+# brew install homeshick --HEAD
+export HOMESHICK_DIR=/usr/local/opt/homeshick
+source "/usr/local/opt/homeshick/homeshick.sh"
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
