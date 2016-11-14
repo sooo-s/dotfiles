@@ -53,8 +53,6 @@ eval "$(anyenv init -)"
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
-#source ~/.iterm2_shell_integration.`basename $SHELL`
-
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
 
