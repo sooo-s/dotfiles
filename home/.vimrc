@@ -82,6 +82,7 @@ set backspace=indent,eol,start
 set expandtab
 set tabstop=2
 set shiftwidth=2
+set ambiwidth=double
 
 set undodir=~/tmp/vim/undo
 set undofile
