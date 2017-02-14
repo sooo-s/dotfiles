@@ -95,6 +95,8 @@ inoremap <silent> jj <ESC>
 set spelllang+=cjk
 set spell
 
+let g:vim_json_syntax_conceal = 0
+
 " nerdtree settings
 " 隠しファイルをデフォルトで表示させる
 let NERDTreeShowHidden = 1
