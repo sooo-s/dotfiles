@@ -1,6 +1,7 @@
 alias ls='ls -G'
 alias tmux='tmux -u'
 alias npm-exec='PATH=$(npm bin):$PATH'
+alias ql='qlmanage -p "$@" >& /dev/null'
 
 HISTSIZE=5000
 HISTFILESIZE=5000
