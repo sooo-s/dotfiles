@@ -16,6 +16,8 @@
   diff = diff-highlight | less
 [interactive]
   diffFilter = diff-highlight
+[diff]
+  indentHeuristic = true
 [alias]
 	pr-setup = config --add remote.origin.fetch +refs/pull/*/head:refs/remotes/origin/pr/*
 	graph = log --graph --oneline --decorate=full
