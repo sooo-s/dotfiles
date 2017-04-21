@@ -14,40 +14,7 @@ if dein#load_state('~/.vim/dein')
   " Required:
   call dein#add('~/.vim/dein/repos/github.com/Shougo/dein.vim')
 
-  " Add or remove your plugins here:
-  call dein#add('Shougo/neosnippet.vim')
-  call dein#add('Shougo/neosnippet-snippets')
-  call dein#add('Shougo/neosnippet.vim')
-  call dein#add('Shougo/neosnippet-snippets')
-  call dein#add('honza/vim-snippets')
-
-
-  " my settings
-  call dein#add('kannokanno/previm')
-  call dein#add('tyru/open-browser.vim')
-  call dein#add('scrooloose/nerdtree')
-  call dein#add('itchyny/lightline.vim')
-  call dein#add('tpope/vim-surround')
-  call dein#add('tyru/caw.vim')
-  call dein#add('tpope/vim-obsession')
-  call dein#add('tpope/vim-fugitive')
-  call dein#add('ctrlpvim/ctrlp.vim')
-  call dein#add('thinca/vim-quickrun')
-  " color
-  call dein#add('chriskempson/base16-vim')
-  call dein#add('sickill/vim-monokai')
-  call dein#add('flazz/vim-colorschemes')
-  " syntax
-  call dein#add('evidens/vim-twig')
-  call dein#add('cespare/vim-toml')
-  call dein#add('kchmck/vim-coffee-script')
-  call dein#add('elzr/vim-json')
-  call dein#add('slim-template/vim-slim')
-  " help
-  call dein#add('vim-jp/vimdoc-ja')
-
-  " You can specify revision/branch/tag.
-  call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+  call dein#load_toml('~/.dein.toml')
 
   " Required:
   call dein#end()

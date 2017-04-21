@@ -1,0 +1,55 @@
+# dein default
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+[[plugins]]
+repo = 'honza/vim-snippets'
+[[plugins]]
+repo = 'Shougo/vimshell'
+
+# my settings
+[[plugins]]
+repo = 'kannokanno/previm'
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+[[plugins]]
+repo = 'tpope/vim-surround'
+[[plugins]]
+repo = 'tyru/caw.vim'
+[[plugins]]
+repo = 'tpope/vim-obsession'
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+
+## color
+[[plugins]]
+repo = 'chriskempson/base16-vim'
+[[plugins]]
+repo = 'sickill/vim-monokai'
+[[plugins]]
+repo = 'flazz/vim-colorschemes'
+
+## syntax
+[[plugins]]
+repo = 'evidens/vim-twig'
+[[plugins]]
+repo = 'cespare/vim-toml'
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+[[plugins]]
+repo = 'elzr/vim-json'
+[[plugins]]
+repo = 'slim-template/vim-slim'
+
+## help
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
