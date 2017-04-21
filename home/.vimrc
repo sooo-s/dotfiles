@@ -1,74 +1,80 @@
-" neobundle settings
-if has('vim_starting')
-  if &compatible
-    set nocompatible               " Be iMproved
-  endif
+"dein Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
+endif
+
+" Required:
+set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
+
+" Required:
+if dein#load_state('~/.vim/dein')
+  call dein#begin('~/.vim/dein')
+
+  " Let dein manage dein
+  " Required:
+  call dein#add('~/.vim/dein/repos/github.com/Shougo/dein.vim')
+
+  " Add or remove your plugins here:
+  call dein#add('Shougo/neosnippet.vim')
+  call dein#add('Shougo/neosnippet-snippets')
+  call dein#add('Shougo/neosnippet.vim')
+  call dein#add('Shougo/neosnippet-snippets')
+  call dein#add('honza/vim-snippets')
+
+
+  " my settings
+  call dein#add('kannokanno/previm')
+  call dein#add('tyru/open-browser.vim')
+  call dein#add('scrooloose/nerdtree')
+  call dein#add('itchyny/lightline.vim')
+  call dein#add('tpope/vim-surround')
+  call dein#add('tyru/caw.vim')
+  call dein#add('tpope/vim-obsession')
+  call dein#add('tpope/vim-fugitive')
+  call dein#add('ctrlpvim/ctrlp.vim')
+  call dein#add('thinca/vim-quickrun')
+  " color
+  call dein#add('chriskempson/base16-vim')
+  call dein#add('sickill/vim-monokai')
+  call dein#add('flazz/vim-colorschemes')
+  " syntax
+  call dein#add('evidens/vim-twig')
+  call dein#add('cespare/vim-toml')
+  call dein#add('kchmck/vim-coffee-script')
+  call dein#add('elzr/vim-json')
+  call dein#add('slim-template/vim-slim')
+  " help
+  call dein#add('vim-jp/vimdoc-ja')
+
+  " You can specify revision/branch/tag.
+  call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
 
   " Required:
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-
+  call dein#end()
+  call dein#save_state()
 endif
 
 " Required:
-call neobundle#begin(expand('~/.vim/bundle'))
+filetype plugin indent on
+syntax enable
 
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" Add or remove your Bundles here:
-if has('lua')
-  NeoBundle 'Shougo/neocomplete'
+" If you want to install not installed plugins on startup.
+if dein#check_install()
+  call dein#install()
 endif
 
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'honza/vim-snippets'
+"End dein Scripts-------------------------
 
-" my settings
-NeoBundle 'kannokanno/previm'
-NeoBundle 'tyru/open-browser.vim'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'tyru/caw.vim'
+"caw.vim
 nmap <C-_> <Plug>(caw:i:toggle)
 vmap <C-_> <Plug>(caw:i:toggle)
-NeoBundle 'tpope/vim-obsession'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'thinca/vim-quickrun'
+"vim-quickrun
 let g:quickrun_config={
 \   '_': {
 \     'split': ':botright',
 \     'into': 1
 \   }
 \}
-
-" color
-NeoBundle 'chriskempson/base16-vim'
-NeoBundle 'sickill/vim-monokai'
-NeoBundle 'flazz/vim-colorschemes'
-
-" syntax
-NeoBundle 'evidens/vim-twig'
-NeoBundle 'cespare/vim-toml'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'elzr/vim-json'
-NeoBundle 'slim-template/vim-slim'
-
-" help
-NeoBundle 'vim-jp/vimdoc-ja'
-
-" Required:
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
 
 " vim settings
 syntax on
@@ -197,5 +203,4 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 let g:neosnippet#enable_snipmate_compatibility = 1
 
 " Tell Neosnippet about the other snippets
-let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
-
+let g:neosnippet#snippets_directory='~/.vim/dein/repos/github.com/Shougo/neosnippet-snippets/neosnippets/'
