@@ -62,6 +62,15 @@ set autoindent
 set smartindent
 set ambiwidth=double
 
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
+set cursorline
+set wildmenu
+set history=10000
+
 set undodir=~/tmp/vim/undo
 set undofile
 
