@@ -86,7 +86,8 @@ set laststatus=2
 let g:lightline = {
         \ 'mode_map': {'c': 'NORMAL'},
         \ 'active': {
-        \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
+        \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ],
+        \   'right': [ ['datetime'] , [ 'percent', 'lineinfo' ], [ 'fileformat', 'fileencoding', 'filetype' ] ]
         \ },
         \ 'component_function': {
         \   'modified': 'MyModified',
@@ -96,7 +97,8 @@ let g:lightline = {
         \   'fileformat': 'MyFileformat',
         \   'filetype': 'MyFiletype',
         \   'fileencoding': 'MyFileencoding',
-        \   'mode': 'MyMode'
+        \   'mode': 'MyMode',
+        \   'datetime': 'MyDatetime'
         \ }
         \ }
 
@@ -143,10 +145,13 @@ function! MyMode()
   return winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
 
+function! MyDatetime()
+  return winwidth(0) > 60 ? strftime("%F %T") : ''
+endfunction
+
 " neocomplete settings
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#auto_completion_start_length = 4
-
 
 " neosnippet settings
 " Plugin key-mappings.
