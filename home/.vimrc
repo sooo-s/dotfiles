@@ -82,6 +82,7 @@ augroup END
 
 
 " lightline settings
+set laststatus=2
 let g:lightline = {
         \ 'mode_map': {'c': 'NORMAL'},
         \ 'active': {
