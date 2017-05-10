@@ -1,3 +1,6 @@
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
+
 set encoding=utf-8
 scriptencoding utf-8
 
@@ -54,7 +57,8 @@ colorscheme hybrid
 set list
 set listchars=tab:>-,eol:$
 
-set backspace=indent,eol,start
+set history=10000
+
 set expandtab
 set tabstop=2
 set shiftwidth=2
@@ -62,14 +66,11 @@ set autoindent
 set smartindent
 set ambiwidth=double
 
-set incsearch
 set ignorecase
 set smartcase
 set hlsearch
 nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
 set cursorline
-set wildmenu
-set history=10000
 
 set undodir=~/tmp/vim/undo
 set undofile
