@@ -39,8 +39,8 @@ endif
 "End dein Scripts-------------------------
 
 "caw.vim
-nmap <C-_> <Plug>(caw:i:toggle)
-vmap <C-_> <Plug>(caw:i:toggle)
+nmap <C-_> <Plug>(caw:hatpos:toggle)
+vmap <C-_> <Plug>(caw:hatpos:toggle)
 "vim-quickrun
 let g:quickrun_config={
 \   '_': {
