@@ -75,7 +75,7 @@ set cursorline
 set undodir=~/tmp/vim/undo
 set undofile
 
-set clipboard=unnamed,autoselect
+set clipboard=unnamed
 
 " remap
 inoremap <silent> jj <ESC>
