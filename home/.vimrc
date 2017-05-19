@@ -21,6 +21,7 @@ if dein#load_state('~/.vim/dein')
   call dein#add('~/.vim/dein/repos/github.com/Shougo/dein.vim')
 
   call dein#load_toml('~/.dein.toml')
+  call dein#load_toml('~/.dein_lazy.toml', {'lazy': 1})
 
   " Required:
   call dein#end()

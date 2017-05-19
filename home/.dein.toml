@@ -1,6 +1,11 @@
 # dein default
 [[plugins]]
-repo = 'Shougo/neosnippet.vim'
+repo = 'Shougo/neocomplete'
+if = "has('lua')"
+hook_add = """
+  let g:neocomplete#enable_at_startup = 1
+  let g:neocomplete#auto_completion_start_length = 4
+"""
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
 [[plugins]]
