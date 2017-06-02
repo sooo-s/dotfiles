@@ -1,6 +1,5 @@
 alias ls='ls -G'
 alias tmux='tmux -u'
-alias npm-exec='PATH=$(npm bin):$PATH'
 alias ql='qlmanage -p "$@" >& /dev/null'
 
 HISTSIZE=5000
@@ -53,6 +52,8 @@ eval "$(anyenv init -)"
 
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
+
+export PATH="$PATH:./node_modules/.bin"
 
 # brew install homeshick --HEAD
 export HOMESHICK_DIR=/usr/local/opt/homeshick
