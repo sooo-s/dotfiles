@@ -27,5 +27,6 @@
 
 [commit]
 	template = ~/.gitmessage.txt
+	verbose = true
 [rebase]
 	autosquash = true
