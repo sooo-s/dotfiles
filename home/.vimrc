@@ -44,6 +44,8 @@ syntax on
 set background=dark
 colorscheme hybrid
 
+set fileencodings=ucs-bom,utf-8,iso-2022-jp,euc-jp,cp932,latin1
+
 set list
 set listchars=tab:>-,eol:$
 
