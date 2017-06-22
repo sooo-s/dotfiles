@@ -54,6 +54,7 @@ export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
 export PATH="$PATH:./node_modules/.bin"
+export PATH="$PATH:$HOME/Dropbox/bin"
 
 # brew install homeshick --HEAD
 export HOMESHICK_DIR=/usr/local/opt/homeshick
