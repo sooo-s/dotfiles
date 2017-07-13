@@ -50,7 +50,7 @@ bind -x '"\C-r": p-history'
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
-export GOPATH="$HOME/go"
+export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOPATH/bin"
 
 export PATH="$PATH:./node_modules/.bin"
