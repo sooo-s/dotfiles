@@ -63,6 +63,11 @@ set smartcase
 set hlsearch
 nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
 set cursorline
+augroup vimrc-auto-cursorline
+  autocmd!
+  autocmd CursorMoved,CursorMovedI,WinLeave * setlocal nocursorline nocursorcolumn
+  autocmd CursorHold,CursorHoldI * setlocal cursorline cursorcolumn
+augroup END
 
 set undodir=~/tmp/vim/undo
 set undofile
