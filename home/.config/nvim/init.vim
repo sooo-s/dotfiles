@@ -3,3 +3,5 @@ let g:python3_host_prog = $HOME . '/.virtualenvs/nvim-python3/bin/python'
 
 colorscheme desert
 set termguicolors
+
+au VimLeave * set guicursor=a:ver100-blinkon1000-blinkoff500
