@@ -33,6 +33,14 @@
                                         "key_code": "return_or_enter"
                                     }
                                 ],
+                                "conditions": [
+                                  {
+                                    "type": "frontmost_application_unless",
+                                    "bundle_identifiers": [
+                                      "^com\\.microsoft\\.rdc\\.mac$"
+                                    ]
+                                  }
+                                ],
                                 "type": "basic"
                             },
                             {
