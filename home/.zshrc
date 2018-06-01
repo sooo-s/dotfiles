@@ -28,6 +28,10 @@ source $ZPLUG_HOME/init.zsh
 ## plugin
 zplug "plugins/colored-man-pages", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting"
+zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_PROMPT_SEPARATE_LINE=false
+SPACESHIP_GIT_SYMBOL="🌿 "
 
 ## Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
