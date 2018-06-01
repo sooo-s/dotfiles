@@ -24,8 +24,28 @@ setopt share_history
 
 
 
+# shell
+export EDITOR=vim
+export PATH="$PATH:./node_modules/.bin"
+export PATH="$PATH:$HOME/Dropbox/bin"
+## less color
+export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
+export LESS='-R'
+
 ## alias
 alias ls='ls -G'
 alias tmux='tmux -u'
 alias ql='qlmanage -p "$@" >& /dev/null'
 
+# brew
+## anyenv
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+## go
+export GOPATH="$HOME/.go"
+export PATH="$PATH:$GOPATH/bin"
+## homeshick --HEAD
+export HOMESHICK_DIR=/usr/local/opt/homeshick
+source "${HOMESHICK_DIR}/homeshick.sh"
+## direnv
+eval "$(direnv hook zsh)"
