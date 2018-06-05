@@ -18,6 +18,8 @@ setopt hist_expand
 setopt hist_reduce_blanks
 setopt inc_append_history
 setopt share_history
+## prompt
+setopt transient_rprompt
 
 # zplug
 export ZPLUG_HOME=/usr/local/opt/zplug
