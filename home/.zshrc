@@ -26,6 +26,8 @@ source $ZPLUG_HOME/init.zsh
 zplug "plugins/colored-man-pages", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-completions"
+zplug "zsh-users/zsh-autosuggestions", \
+	hook-load: ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, as:theme, \
 	hook-load: SPACESHIP_PROMPT_ADD_NEWLINE=false \
 	SPACESHIP_PROMPT_SEPARATE_LINE=false \
