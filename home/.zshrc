@@ -1,13 +1,10 @@
 # zsh
-## zsh-completion
-fpath=(/usr/local/share/zsh-completions $fpath)
 ## completion
 zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
 compinit
 ## case-insensitive completion
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' '+m:{A-Z}={a-z}'
-
 ## history
 HISTFILE=~/.histfile
 HISTSIZE=100000
@@ -32,6 +29,7 @@ zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
 SPACESHIP_GIT_SYMBOL="🌿 "
+zplug "zsh-users/zsh-completions"
 
 ## Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
