@@ -27,7 +27,8 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 ## plugin
 zplug "plugins/colored-man-pages", from:oh-my-zsh
-zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-syntax-highlighting", \
+	hook-load: ZSH_HIGHLIGHT_HIGHLIGHTERS="(main brackets)"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-autosuggestions", \
 	hook-load: ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
