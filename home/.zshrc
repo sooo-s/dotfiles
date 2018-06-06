@@ -18,6 +18,7 @@ setopt hist_expand
 setopt hist_reduce_blanks
 setopt inc_append_history
 setopt share_history
+setopt hist_verify
 ## prompt
 setopt transient_rprompt
 
