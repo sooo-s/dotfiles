@@ -36,13 +36,11 @@ zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, as:theme, \
 	hook-load: SPACESHIP_PROMPT_ADD_NEWLINE=false \
 	SPACESHIP_PROMPT_SEPARATE_LINE=false \
 	SPACESHIP_GIT_SYMBOL="🌿 "
+zplug "jimeh/zsh-peco-history"
 
 ## Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
+        zplug install
 fi
 ## Then, source plugins and add commands to $PATH
 zplug load
