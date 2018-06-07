@@ -74,3 +74,8 @@ export HOMESHICK_DIR=/usr/local/opt/homeshick
 source "${HOMESHICK_DIR}/homeshick.sh"
 ## direnv
 eval "$(direnv hook zsh)"
+## fzf
+export FZF_DEFAULT_OPTS="--reverse"
+### install key bindings and fuzzy completion
+### $ /usr/local/opt/fzf/install
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
