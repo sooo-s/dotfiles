@@ -36,7 +36,6 @@ zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, as:theme, \
 	hook-load: SPACESHIP_PROMPT_ADD_NEWLINE=false \
 	SPACESHIP_PROMPT_SEPARATE_LINE=false \
 	SPACESHIP_GIT_SYMBOL="🌿 "
-zplug "jimeh/zsh-peco-history"
 
 ## Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
