@@ -6,4 +6,10 @@ set termguicolors
 set mouse=a
 set clipboard=unnamed
 
+augroup auto-cursorline
+  autocmd!
+  autocmd CursorMoved,CursorMovedI,WinLeave * setlocal nocursorline nocursorcolumn
+  autocmd CursorHold,CursorHoldI * setlocal cursorline cursorcolumn
+augroup END
+
 au VimLeave * set guicursor=a:ver100-blinkon1000-blinkoff500
