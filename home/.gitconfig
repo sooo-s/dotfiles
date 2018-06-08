@@ -3,7 +3,7 @@
 [push]
 	default = simple
 [core]
-	editor = vim +1
+	editor = nvim +1
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
 	safecrlf = true
