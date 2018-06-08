@@ -5,6 +5,8 @@ autoload -Uz compinit
 compinit
 ## case-insensitive completion
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' '+m:{A-Z}={a-z}'
+## shift + tab
+bindkey '^[[Z' reverse-menu-complete
 ## history
 HISTFILE=~/.histfile
 HISTSIZE=100000
