@@ -39,6 +39,7 @@ zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, as:theme
 	SPACESHIP_PROMPT_SEPARATE_LINE=false
 	SPACESHIP_CHAR_SYMBOL="$ "
 	SPACESHIP_TIME_SHOW=true
+	SPACESHIP_TIME_FORMAT="%D{%F (%a) %T}"
 	SPACESHIP_GIT_SYMBOL="🌿 "
 	SPACESHIP_EXIT_CODE_SHOW=true
 	SPACESHIP_PROMPT_ORDER=( user host dir git char )
