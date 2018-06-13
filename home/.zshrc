@@ -82,3 +82,16 @@ export FZF_DEFAULT_OPTS="--reverse --inline-info"
 ### install key bindings and fuzzy completion
 ### $ /usr/local/opt/fzf/install
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+## ghq + fzf (alt + r)
+function ghq-fzf() {
+  local selected_dir=$(ghq list | fzf --query="$LBUFFER")
+
+  if [ -n "$selected_dir" ]; then
+    BUFFER="cd $(ghq root)/${selected_dir}"
+    zle accept-line
+  fi
+
+  zle reset-prompt
+}
+zle -N ghq-fzf
+bindkey "^[r" ghq-fzf
