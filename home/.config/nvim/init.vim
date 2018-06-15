@@ -12,4 +12,7 @@ augroup auto-cursorline
   autocmd CursorHold,CursorHoldI * setlocal cursorline cursorcolumn
 augroup END
 
-au VimLeave * set guicursor=a:ver100-blinkon1000-blinkoff500
+augroup reset-cursor
+  autocmd!
+  au VimLeave * set guicursor=a:ver100-blinkon1000-blinkoff500
+augroup END
