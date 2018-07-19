@@ -56,6 +56,7 @@ set undodir=~/tmp/vim/undo
 set undofile
 set spelllang+=cjk
 set spell
+set fileencodings=ucs-bom,utf-8,default,iso-2022-jp,euc-jp,cp932,latin1
 
 " remap
 inoremap <silent> jj <ESC>
