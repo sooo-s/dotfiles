@@ -61,6 +61,9 @@ set fileencodings=ucs-bom,utf-8,default,iso-2022-jp,euc-jp,cp932,latin1
 " remap
 inoremap <silent> jj <ESC>
 
+" json
+let g:vim_json_syntax_conceal = 0
+
 augroup auto-cursorline
   autocmd!
   autocmd CursorMoved,CursorMovedI,WinLeave * setlocal nocursorline nocursorcolumn
