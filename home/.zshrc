@@ -30,24 +30,24 @@ source $ZPLUG_HOME/init.zsh
 ## plugin
 zplug "plugins/colored-man-pages", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting", \
-	hook-load: ZSH_HIGHLIGHT_HIGHLIGHTERS="(main brackets)"
+  hook-load: ZSH_HIGHLIGHT_HIGHLIGHTERS="(main brackets)"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-autosuggestions", \
-	hook-load: ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
+  hook-load: ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, as:theme
-	SPACESHIP_PROMPT_ADD_NEWLINE=false
-	SPACESHIP_PROMPT_SEPARATE_LINE=false
-	SPACESHIP_CHAR_SYMBOL="$ "
-	SPACESHIP_TIME_SHOW=true
-	SPACESHIP_TIME_FORMAT="%D{%F (%a) %T}"
-	SPACESHIP_GIT_SYMBOL="🌿 "
-	SPACESHIP_EXIT_CODE_SHOW=true
-	SPACESHIP_PROMPT_ORDER=( user host dir git char )
-	SPACESHIP_RPROMPT_ORDER=( jobs exit_code time )
+  SPACESHIP_PROMPT_ADD_NEWLINE=false
+  SPACESHIP_PROMPT_SEPARATE_LINE=false
+  SPACESHIP_CHAR_SYMBOL="$ "
+  SPACESHIP_TIME_SHOW=true
+  SPACESHIP_TIME_FORMAT="%D{%F (%a) %T}"
+  SPACESHIP_GIT_SYMBOL="🌿 "
+  SPACESHIP_EXIT_CODE_SHOW=true
+  SPACESHIP_PROMPT_ORDER=( user host dir git char )
+  SPACESHIP_RPROMPT_ORDER=( jobs exit_code time )
 
 ## Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
-        zplug install
+  zplug install
 fi
 ## Then, source plugins and add commands to $PATH
 zplug load
