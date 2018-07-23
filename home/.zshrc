@@ -56,9 +56,6 @@ zplug load
 export EDITOR=vim
 export PATH="$PATH:./node_modules/.bin"
 export PATH="$PATH:$HOME/Dropbox/bin"
-## less color
-export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
-export LESS='-R'
 
 ## alias
 alias ls='ls -G'
@@ -95,3 +92,6 @@ function ghq-fzf() {
 }
 zle -N ghq-fzf
 bindkey "^[r" ghq-fzf
+## source-highlight
+export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
+export LESS='-R'
