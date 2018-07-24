@@ -1,4 +1,8 @@
 # zsh
+## brew comp
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
 ## completion
 zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
