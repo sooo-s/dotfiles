@@ -59,16 +59,12 @@ set spell
 set fileencodings=ucs-bom,utf-8,default,iso-2022-jp,euc-jp,cp932,latin1
 
 " remap
+let maplocalleader="\<SPACE>"
 inoremap <silent> jj <ESC>
+nnoremap <silent><LocalLeader><LocalLeader> :<C-u>set cursorline! cursorcolumn!<CR>
 
 " json
 let g:vim_json_syntax_conceal = 0
-
-augroup auto-cursorline
-  autocmd!
-  autocmd CursorMoved,CursorMovedI,WinLeave * setlocal nocursorline nocursorcolumn
-  autocmd CursorHold,CursorHoldI * setlocal cursorline cursorcolumn
-augroup END
 
 augroup reset-cursor
   autocmd!
