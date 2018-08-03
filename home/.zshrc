@@ -96,6 +96,9 @@ function ghq-fzf() {
 }
 zle -N ghq-fzf
 bindkey "^[r" ghq-fzf
+
+bindkey -r '^T'
+bindkey '\et' fzf-file-widget
 ## source-highlight
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 export LESS='-R'
