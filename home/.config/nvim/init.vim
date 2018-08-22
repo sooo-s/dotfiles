@@ -57,6 +57,8 @@ set undofile
 set spelllang+=cjk
 set spell
 set fileencodings=ucs-bom,utf-8,default,iso-2022-jp,euc-jp,cp932,latin1
+set wildmode=list:longest,full "zsh style tab completion in command line mode
+set wildignorecase
 
 " remap
 let maplocalleader="\<SPACE>"
