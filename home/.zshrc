@@ -65,6 +65,9 @@ export PATH="$PATH:$HOME/Dropbox/bin"
 alias ls='ls -G'
 alias tmux='tmux -u'
 alias ql='qlmanage -p "$@" >& /dev/null'
+alias -g @p='| tee /dev/tty |' # print and pipe
+alias -g @g='| grep'
+alias -g @l='| less'
 
 # brew
 ## anyenv
