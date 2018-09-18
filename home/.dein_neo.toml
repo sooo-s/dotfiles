@@ -99,6 +99,9 @@ hook_add = """
 [[plugins]]
 repo = 'dhruvasagar/vim-table-mode'
 hook_add = "let g:table_mode_corner='|'"
+[[plugins]]
+repo = 'google/vim-searchindex'
+
 
 ## syntax
 [[plugins]]
