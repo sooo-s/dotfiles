@@ -1,4 +1,5 @@
 # zsh
+export LANG="ja_JP.UTF-8"
 ## brew comp
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
