@@ -114,6 +114,8 @@ repo = 'kchmck/vim-coffee-script'
 repo = 'elzr/vim-json'
 [[plugins]]
 repo = 'slim-template/vim-slim'
+[[plugins]]
+repo = 'PProvost/vim-ps1'
 
 [[plugins]]
 repo = 'inkarkat/vim-SyntaxRange'
