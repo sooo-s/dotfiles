@@ -117,6 +117,8 @@ repo = 'elzr/vim-json'
 repo = 'slim-template/vim-slim'
 [[plugins]]
 repo = 'PProvost/vim-ps1'
+[[plugins]]
+repo = 'mechatroner/rainbow_csv'
 
 [[plugins]]
 repo = 'inkarkat/vim-SyntaxRange'
