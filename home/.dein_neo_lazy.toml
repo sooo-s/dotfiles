@@ -1,0 +1,22 @@
+## syntax
+[[plugins]]
+repo = 'evidens/vim-twig'
+on_ft = 'twig'
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+on_ft = 'coffee'
+[[plugins]]
+repo = 'elzr/vim-json'
+on_ft = 'json'
+[[plugins]]
+repo = 'slim-template/vim-slim'
+on_ft = 'slim'
+[[plugins]]
+repo = 'PProvost/vim-ps1'
+on_ft = 'ps1'
+[[plugins]]
+repo = 'mechatroner/rainbow_csv'
+on_ft = 'csv'

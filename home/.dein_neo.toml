@@ -103,22 +103,5 @@ hook_add = "let g:table_mode_corner='|'"
 [[plugins]]
 repo = 'google/vim-searchindex'
 
-
-## syntax
-[[plugins]]
-repo = 'evidens/vim-twig'
-[[plugins]]
-repo = 'cespare/vim-toml'
-[[plugins]]
-repo = 'kchmck/vim-coffee-script'
-[[plugins]]
-repo = 'elzr/vim-json'
-[[plugins]]
-repo = 'slim-template/vim-slim'
-[[plugins]]
-repo = 'PProvost/vim-ps1'
-[[plugins]]
-repo = 'mechatroner/rainbow_csv'
-
 [[plugins]]
 repo = 'inkarkat/vim-SyntaxRange'
