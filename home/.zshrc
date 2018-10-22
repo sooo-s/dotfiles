@@ -71,9 +71,12 @@ alias -g @g='| grep'
 alias -g @l='| less'
 
 # brew
-## anyenv
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
+## rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+## plenv
+if which plenv > /dev/null; then eval "$(plenv init - zsh)"; fi
+## nodenv
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 ## go
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOPATH/bin"
