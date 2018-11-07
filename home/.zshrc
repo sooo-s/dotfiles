@@ -77,6 +77,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which plenv > /dev/null; then eval "$(plenv init - zsh)"; fi
 ## nodenv
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+## pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 ## go
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOPATH/bin"
