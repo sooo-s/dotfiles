@@ -101,3 +101,6 @@ repo = 'google/vim-searchindex'
 
 [[plugins]]
 repo = 'inkarkat/vim-SyntaxRange'
+
+[[plugins]]
+repo = 'w0rp/ale'
