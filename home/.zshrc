@@ -29,6 +29,8 @@ setopt hist_verify
 ## prompt
 setopt transient_rprompt
 
+setopt interactivecomments
+
 # zplug
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
