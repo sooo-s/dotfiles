@@ -1074,6 +1074,67 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Change option + bf to option + control + bf",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                   {
+                                      "type": "frontmost_application_unless",
+                                      "bundle_identifiers": [
+                                          "^com\\.googlecode\\.iterm2"
+                                      ]
+                                   }
+                                ],
+                                "from": {
+                                    "key_code": "b",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "b",
+                                        "modifiers": [
+                                            "option",
+                                            "control"
+                                          ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                   {
+                                      "type": "frontmost_application_unless",
+                                      "bundle_identifiers": [
+                                          "^com\\.googlecode\\.iterm2"
+                                      ]
+                                   }
+                                ],
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f",
+                                        "modifiers": [
+                                            "option",
+                                            "control"
+                                          ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
