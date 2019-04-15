@@ -3,8 +3,6 @@ repo = 'kannokanno/previm'
 hook_add = """
   let g:previm_open_cmd = 'open -a "Google Chrome"'
   let g:previm_show_header = 0
-  let g:previm_disable_default_css = 1
-  let g:previm_custom_css_path = '/Users/so/src/github.com/sooo-s/cv/cv.css'
 """
 [[plugins]]
 repo = 'tpope/vim-fugitive'
