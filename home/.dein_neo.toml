@@ -113,6 +113,6 @@ hook_add = """
 [[plugins]]
 repo = 'embear/vim-localvimrc'
 hook_add = """
-let g:localvimrc_ask = 0
-let g:localvimrc_persistent = 2
+  let g:localvimrc_ask = 0
+  let g:localvimrc_persistent = 2
 """
