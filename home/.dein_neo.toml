@@ -106,6 +106,7 @@ repo = 'inkarkat/vim-SyntaxRange'
 [[plugins]]
 repo = 'w0rp/ale'
 hook_add = """
+  let g:ale_sign_column_always = 1
   let g:ale_fixers = ['textlint']
 """
 [[plugins]]
