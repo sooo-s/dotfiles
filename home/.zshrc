@@ -63,7 +63,8 @@ zplug load
 # shell
 export EDITOR=vim
 export PATH="$PATH:./node_modules/.bin"
-export PATH="$PATH:$HOME/Dropbox/bin"
+## sooo-s/homebin
+export PATH="$PATH:$HOME/bin"
 
 ## alias
 alias ls='ls -G'
