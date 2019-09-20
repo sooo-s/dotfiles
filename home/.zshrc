@@ -62,7 +62,6 @@ zplug load
 
 # shell
 export EDITOR=vim
-export PATH="$PATH:./node_modules/.bin"
 ## sooo-s/homebin
 export PATH="$PATH:$HOME/bin"
 
