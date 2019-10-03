@@ -1,3 +1,8 @@
+## ruby
+[[plugins]]
+repo = 'tpope/vim-endwise'
+on_ft = 'ruby'
+
 ## syntax
 [[plugins]]
 repo = 'evidens/vim-twig'

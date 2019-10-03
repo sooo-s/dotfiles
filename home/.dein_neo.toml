@@ -116,3 +116,6 @@ hook_add = """
   let g:localvimrc_ask = 0
   let g:localvimrc_persistent = 2
 """
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+rev = 'release'
