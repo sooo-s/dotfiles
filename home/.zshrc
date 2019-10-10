@@ -89,7 +89,7 @@ export PATH="$PATH:$GOPATH/bin"
 export HOMESHICK_DIR=/usr/local/opt/homeshick
 source "${HOMESHICK_DIR}/homeshick.sh"
 ## direnv
-eval "$(direnv hook zsh)"
+if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 ## fzf
 export FZF_DEFAULT_OPTS="--reverse --inline-info"
 ### install key bindings and fuzzy completion
