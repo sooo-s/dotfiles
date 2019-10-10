@@ -7,6 +7,7 @@
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
 	safecrlf = true
+  pager = less -RFX
 [color]
 	ui = auto
 	diff = auto
