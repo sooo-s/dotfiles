@@ -1,4 +1,6 @@
 [[plugins]]
+repo = 'w0ng/vim-hybrid'
+[[plugins]]
 repo = 'kannokanno/previm'
 hook_add = """
   let g:previm_open_cmd = 'open -a "Google Chrome"'
@@ -28,6 +30,7 @@ hook_add = """
           \   'datetime': 'MyDatetime'
           \ }
           \ }
+  let g:lightline.colorscheme = 'Tomorrow_Night'
 
   function! MyModified()
     return &ft =~ 'help\|vimfiler\|gundo' ? '' : &modified ? '+' : &modifiable ? '' : '-'

@@ -36,7 +36,11 @@ endif
 
 "End dein Scripts-------------------------
 
-colorscheme desert
+" colorscheme
+set background=dark
+let g:hybrid_custom_term_colors = 1
+colorscheme hybrid
+
 set termguicolors
 set mouse=a
 set clipboard=unnamed
