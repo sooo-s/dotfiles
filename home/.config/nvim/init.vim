@@ -71,6 +71,8 @@ let maplocalleader="\\"
 inoremap <silent> jj <ESC>
 nnoremap <silent><Leader><Leader> :<C-u>set cursorline! cursorcolumn!<CR>
 nnoremap <silent><Leader>s :<C-u>set nospell!<CR>
+" for AtCoder
+nnoremap <Leader>q :<C-u>cd %:h<CR> :QuickRun -exec "oj t -d tests -c 'ruby main.rb'"<CR>
 
 " json
 let g:vim_json_syntax_conceal = 0
