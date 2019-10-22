@@ -66,9 +66,11 @@ set wildmode=list:longest,full "zsh style tab completion in command line mode
 set wildignorecase
 
 " remap
-let maplocalleader="\<SPACE>"
+let mapleader="\<SPACE>"
+let maplocalleader="\\"
 inoremap <silent> jj <ESC>
-nnoremap <silent><LocalLeader><LocalLeader> :<C-u>set cursorline! cursorcolumn!<CR>
+nnoremap <silent><Leader><Leader> :<C-u>set cursorline! cursorcolumn!<CR>
+nnoremap <silent><Leader>s :<C-u>set nospell!<CR>
 
 " json
 let g:vim_json_syntax_conceal = 0
