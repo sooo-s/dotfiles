@@ -69,7 +69,7 @@ set wildignorecase
 let mapleader="\<SPACE>"
 let maplocalleader="\\"
 inoremap <silent> jj <ESC>
-nnoremap <silent><Leader><Leader> :<C-u>set cursorline! cursorcolumn!<CR>
+nnoremap <silent><Leader>c :<C-u>set cursorline! cursorcolumn!<CR>
 nnoremap <silent><Leader>s :<C-u>set nospell!<CR>
 " for AtCoder
 " " all test
