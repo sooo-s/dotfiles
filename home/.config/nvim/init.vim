@@ -72,7 +72,13 @@ inoremap <silent> jj <ESC>
 nnoremap <silent><Leader><Leader> :<C-u>set cursorline! cursorcolumn!<CR>
 nnoremap <silent><Leader>s :<C-u>set nospell!<CR>
 " for AtCoder
-nnoremap <Leader>q :<C-u>cd %:h<CR> :QuickRun -exec "oj t -d tests -c 'ruby main.rb'"<CR>
+" " all test
+nnoremap <Leader>at :<C-u>cd %:h<CR> :QuickRun -exec "oj t -d tests -c 'ruby main.rb'"<CR>
+" " sample-* test
+nnoremap <Leader>aa :<C-u>cd %:h<CR> :QuickRun -exec "ruby main.rb < tests/sample-1.in"<CR>
+nnoremap <Leader>a1 :<C-u>cd %:h<CR> :QuickRun -exec "ruby main.rb < tests/sample-1.in"<CR>
+nnoremap <Leader>a2 :<C-u>cd %:h<CR> :QuickRun -exec "ruby main.rb < tests/sample-2.in"<CR>
+nnoremap <Leader>a3 :<C-u>cd %:h<CR> :QuickRun -exec "ruby main.rb < tests/sample-3.in"<CR>
 
 " json
 let g:vim_json_syntax_conceal = 0
