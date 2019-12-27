@@ -1,16 +1,30 @@
-### https://raw.github.com/github/gitignore/4a9d41f8947b9fe5850914abb7e59a59e1ae2cb6/Global/Vim.gitignore
+### https://raw.github.com/github/gitignore/6c87d249af5f2b3f8ab65ae0a2648682ee4e8a2d/Global/Vim.gitignore
 
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
-*.un~
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
 Session.vim
+Sessionx.vim
+
+# Temporary
 .netrwhist
 *~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
 
 
 ### https://raw.github.com/github/gitignore/4a9d41f8947b9fe5850914abb7e59a59e1ae2cb6/Global/Vagrant.gitignore
 
 .vagrant/
+
 
 ### https://raw.github.com/github/gitignore/b304edf487ce607174e188712225b5269d43f279/Global/OSX.gitignore
 
@@ -39,13 +53,16 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+
 ### direnv
 
 .envrc
 
+
 ### mydoc
 
 mydoc/
+
 
 ### https://raw.github.com/github/gitignore/be3333655bffe9507d66cc864aee95ed6052b4ed/Global/Windows.gitignore
 
@@ -67,3 +84,14 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+### https://raw.github.com/github/gitignore/6c87d249af5f2b3f8ab65ae0a2648682ee4e8a2d/Global/VisualStudioCode.gitignore
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
