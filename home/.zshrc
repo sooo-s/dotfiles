@@ -111,6 +111,15 @@ bindkey "^[r" ghq-fzf
 
 bindkey -r '^T'
 bindkey '\et' fzf-file-widget
+### fzf + git
+#### fbr - checkout git branch (including remote branches)
+fbr() {
+  local branches branch
+  branches=$(git branch --all | \grep -v HEAD) &&
+  branch=$(echo "$branches" |
+           fzf-tmux -d $(( 2 + $(wc -l <<< "$branches") )) +m) &&
+  git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
+}
 ## source-highlight
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 export LESS='-R'
