@@ -61,7 +61,7 @@ fi
 zplug load
 
 # shell
-export EDITOR=vim
+export EDITOR=nvim
 ## sooo-s/homebin
 export PATH="$PATH:$HOME/bin"
 
