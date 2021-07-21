@@ -87,6 +87,9 @@ augroup reset-cursor
   au VimLeave * set guicursor=a:ver100-blinkon1000-blinkoff500
 augroup END
 
+" markdown
+au BufRead,BufNewFile *.md.txt set filetype=markdown
+
 augroup syntax-range
   autocmd!
   autocmd BufNewFile,BufRead .dein*.toml call s:syntax_range_dein()
@@ -110,3 +113,4 @@ let g:netrw_liststyle = 3
 let g:netrw_altv = 1
 " 分割で開いたときに85%のサイズで開く
 let g:netrw_winsize = 85
+
