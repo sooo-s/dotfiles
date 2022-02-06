@@ -36,34 +36,33 @@ setopt interactivecomments
 autoload -Uz colors
 colors
 
-# zplug
-export ZPLUG_HOME=/usr/local/opt/zplug
-source $ZPLUG_HOME/init.zsh
+# zinit
+source ${BREW_PREFIX}/opt/zinit/zinit.zsh
 ## plugin
-zplug "plugins/colored-man-pages", from:oh-my-zsh
-zplug "zsh-users/zsh-syntax-highlighting", \
-  hook-load: ZSH_HIGHLIGHT_HIGHLIGHTERS="(main brackets)"
-zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-autosuggestions", \
-  hook-load: ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
-zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, as:theme
+zplugin snippet OMZP::colored-man-pages
+
+zinit ice wait lucid
+zinit light "zsh-users/zsh-completions"
+
+zinit ice wait lucid atload"ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'"
+zinit light "zsh-users/zsh-autosuggestions"
+
+zinit ice wait lucid
+zinit light "zsh-users/zsh-syntax-highlighting"
+
+zinit ice atinit"
   SPACESHIP_PROMPT_ADD_NEWLINE=false
   SPACESHIP_PROMPT_SEPARATE_LINE=false
-  SPACESHIP_CHAR_SYMBOL="$ "
+  SPACESHIP_CHAR_SYMBOL='$ '
   SPACESHIP_TIME_SHOW=true
-  SPACESHIP_TIME_FORMAT="%D{%F (%a) %T}"
-  SPACESHIP_DIR_LOCK_SYMBOL="🔒"
-  SPACESHIP_GIT_SYMBOL="🌿 "
+  SPACESHIP_TIME_FORMAT='%D{%F (%a) %T}'
+  SPACESHIP_DIR_LOCK_SYMBOL='🔒'
+  SPACESHIP_GIT_SYMBOL='🌿 '
   SPACESHIP_EXIT_CODE_SHOW=true
   SPACESHIP_PROMPT_ORDER=( user host dir git char )
   SPACESHIP_RPROMPT_ORDER=( jobs exit_code time )
-
-## Install plugins if there are plugins that have not been installed
-if ! zplug check --verbose; then
-  zplug install
-fi
-## Then, source plugins and add commands to $PATH
-zplug load
+"
+zinit light "spaceship-prompt/spaceship-prompt"
 
 # shell
 export EDITOR=nvim
