@@ -32,6 +32,9 @@ setopt hist_verify
 setopt transient_rprompt
 
 setopt interactivecomments
+## color
+autoload -Uz colors
+colors
 
 # zplug
 export ZPLUG_HOME=/usr/local/opt/zplug
