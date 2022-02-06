@@ -1,8 +1,10 @@
 # zsh
 export LANG="ja_JP.UTF-8"
+## brew prefix path
+BREW_PREFIX=$(brew --prefix)
 ## brew comp
 if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+  FPATH=${BREW_PREFIX}/share/zsh/site-functions:$FPATH
 fi
 ## completion
 zstyle :compinstall filename '~/.zshrc'
@@ -86,14 +88,14 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOPATH/bin"
 ## homeshick --HEAD
-export HOMESHICK_DIR=/usr/local/opt/homeshick
+export HOMESHICK_DIR=${BREW_PREFIX}/opt/homeshick
 source "${HOMESHICK_DIR}/homeshick.sh"
 ## direnv
 if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 ## fzf
 export FZF_DEFAULT_OPTS="--reverse --inline-info"
 ### install key bindings and fuzzy completion
-### $ /usr/local/opt/fzf/install
+### $ $(brew --prefix)/opt/fzf/install
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 ## ghq + fzf (alt + r)
 function ghq-fzf() {
@@ -121,5 +123,5 @@ fbr() {
   git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
 }
 ## source-highlight
-export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
+export LESSOPEN='| ${BREW_PREFIX}/bin/src-hilite-lesspipe.sh %s'
 export LESS='-R'
