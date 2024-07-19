@@ -127,3 +127,9 @@ fbr() {
 ## source-highlight
 export LESSOPEN='| ${BREW_PREFIX}/bin/src-hilite-lesspipe.sh %s'
 export LESS='-R'
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/so.rokkaku/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+export COREPACK_ENABLE_AUTO_PIN=0
