@@ -21,7 +21,7 @@
 	graph = log --graph --oneline --decorate=full
 	unstage = reset HEAD --
 [ghq]
-	root = ~/src
+	root = ~/dev
 
 [commit]
 	template = ~/.gitmessage.txt
@@ -39,3 +39,5 @@
 	rebase = false
 [init]
 	defaultBranch = main
+[branch]
+	sort = -authordate
